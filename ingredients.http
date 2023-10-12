@@ -1,0 +1,23 @@
+POST http://localhost:8081/ingredientRouter/ingredient/2
+Content-Type: application/json
+
+{
+	"ingredients":  [
+		{  "name":  "Flour",  "quantity":  "2 cups",  "condition":  "None"  },
+		{  "name":  "Sugar",  "quantity":  "1 cup",  "condition":  "None"  },
+		{  "name":  "Chocolate",  "quantity":  "1 bar",  "condition":  "Diced"  }
+	]
+}
+###
+
+PATCH http://localhost:8081/ingredientRouter/ingredient/2
+Content-Type: application/json
+ 
+{
+	"ingredients":  [
+		{  "name":  "Wheat Flour",  "quantity":  "4 cups",  "condition":  "washed"  }
+	]
+}
+###
+
+DELETE http://localhost:8081/recipeRouter/ingredient/2

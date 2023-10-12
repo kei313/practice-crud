@@ -1,0 +1,30 @@
+GET http://localhost:8081/recipeRouter/food
+###
+
+GET http://localhost:8081/recipeRouter/food/1
+###
+
+GET http://localhost:8081/recipeRouter/food/type/appetizer
+###
+
+POST http://localhost:8081/recipeRouter/recipe
+Content-Type: application/json
+
+{
+	"name":  "Chocolate Chip Cookies",
+	"type":  "dessert",
+	"instructions":  "Bake at 350°F for 12 minutes."
+}
+###
+
+PATCH http://localhost:8081/recipeRouter/food/5
+Content-Type: application/json
+ 
+{ 	
+"name":  "Chocolate Cookies with almond milk",
+"type":  "dessert",
+"instructions":  "Bake at 350°F for 12 minutes." 
+}
+
+###
+DELETE http://localhost:8081/recipeRouter/food/6
